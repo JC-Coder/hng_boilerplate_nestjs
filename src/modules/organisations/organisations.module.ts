@@ -10,6 +10,7 @@ import { Role } from '@modules/role/entities/role.entity';
 import { Profile } from '@modules/profile/entities/profile.entity';
 import { UserModule } from '@modules/user/user.module';
 import { InviteModule } from '@modules/invite/invite.module';
+import { Permissions } from '@modules/permissions/entities/permissions.entity';
 
 @Module({
   imports: [
