@@ -1,5 +1,6 @@
 {
   "name": "hng_boilerplate_nestjs",
+  "type": "module",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -133,7 +134,18 @@
       "**/*.(t|j)s"
     ],
     "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "^@database/(.*)$": "<rootDir>/database/$1",
+      "^@entities/(.*)$": "<rootDir>/entities/$1",
+      "^@guards/(.*)$": "<rootDir>/guards/$1",
+      "^@modules/(.*)$": "<rootDir>/modules/$1",
+      "^@tests/(.*)$": "<rootDir>/run-tests/$1",
+      "^@shared/(.*)$": "<rootDir>/shared/$1",
+      "^@utils/(.*)$": "<rootDir>/utils/$1",
+      "^@config/(.*)$": "<rootDir>/../config/$1",
+      "^@src-uploads/(.*)$": "<rootDir>/uploads/$1"
+    }
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"

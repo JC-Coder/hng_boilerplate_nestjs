@@ -7,6 +7,7 @@ import { getRepositoryToken } from '@nestjs/typeorm';
 import UserService from '../../user/user.service';
 import {
   ForbiddenException,
+  NotFoundException,
 } from '@nestjs/common';
 import { Profile } from '../../profile/entities/profile.entity';
 import { OrganisationUserRole } from '../../../modules/role/entities/organisation-user-role.entity';
