@@ -1,3 +1,5 @@
+import 'module-alias/register';
+import 'reflect-metadata';
 import * as bcrypt from 'bcryptjs';
 import * as speakeasy from 'speakeasy';
 import { Test, TestingModule } from '@nestjs/testing';

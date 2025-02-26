@@ -1,3 +1,5 @@
+import 'module-alias/register';
+import 'reflect-metadata';
 import * as SYS_MSG from '@shared/constants/SystemMessages';
 import { Test, TestingModule } from '@nestjs/testing';
 import { getRepositoryToken } from '@nestjs/typeorm';

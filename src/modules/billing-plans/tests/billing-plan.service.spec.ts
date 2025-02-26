@@ -1,3 +1,5 @@
+import 'module-alias/register';
+import 'reflect-metadata';
 import { Test, TestingModule } from '@nestjs/testing';
 import { BillingPlanService } from '../billing-plan.service';
 import { Repository } from 'typeorm';
