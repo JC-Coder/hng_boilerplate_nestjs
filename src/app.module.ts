@@ -5,7 +5,7 @@ import { Module, ValidationPipe } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { APP_PIPE } from '@nestjs/core';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { object, string, number } from 'joi';
+import * as Joi from 'joi';
 import { LoggerModule } from 'nestjs-pino';
 import authConfig from '@config/auth.config';
 import serverConfig from '@config/server.config';
@@ -83,10 +83,10 @@ import { ApiStatusModule } from '@modules/api-status/api-status.module';
       envFilePath: ['.env.development.local', `.env.${process.env.PROFILE}`],
       isGlobal: true,
       load: [serverConfig, authConfig],
-      validationSchema: object({
-        NODE_ENV: string().valid('development', 'production', 'test', 'provision').required(),
-        PROFILE: string().valid('local', 'development', 'production', 'ci', 'testing', 'staging').required(),
-        PORT: number().required(),
+      validationSchema: Joi.object({
+        NODE_ENV: Joi.string().valid('development', 'production', 'test', 'provision').required(),
+        PROFILE: Joi.string().valid('local', 'development', 'production', 'ci', 'testing', 'staging').required(),
+        PORT: Joi.number().required(),
       }),
     }),
     LoggerModule.forRoot(),

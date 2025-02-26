@@ -7,6 +7,7 @@ import { Role } from './entities/role.entity';
 import { User } from '@modules/user/entities/user.entity';
 import { DefaultPermissions } from '@modules/permissions/entities/default-permissions.entity';
 import { Organisation } from '@modules/organisations/entities/organisations.entity';
+import { Permissions } from '@modules/permissions/entities/permissions.entity';
 
 @Module({
   imports: [
