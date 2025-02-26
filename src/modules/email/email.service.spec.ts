@@ -13,7 +13,7 @@ import { CustomHttpException } from '@shared/helpers/custom-http-filter';
 import * as SYS_MSG from '@shared/constants/SystemMessages';
 import * as util from 'util';
 
-jest.mock('../../helpers/fileHelpers', () => ({
+jest.mock('../../shared/helpers/fileHelpers', () => ({
   createFile: jest.fn(),
   deleteFile: jest.fn(),
   getFile: jest.fn(),
