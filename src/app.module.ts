@@ -28,7 +28,7 @@ import { JobsModule } from '@modules/jobs/jobs.module';
 import { NewsletterSubscriptionModule } from '@modules/newsletter-subscription/newsletter-subscription.module';
 import { NotificationSettingsModule } from '@modules/notification-settings/notification-settings.module';
 import { NotificationsModule } from '@modules/notifications/notifications.module';
-import { OrganisationsModule } from '@modules/organisations/OrganisationsModule';
+import { OrganisationsModule } from '@modules/organisations/organisations.module';
 import { OtpModule } from '@modules/otp/otp.module';
 import { OrganisationPermissionsModule } from '@modules/permissions/permissions.module';
 import { ProductsModule } from '@modules/products/products.module';
