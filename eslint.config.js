@@ -13,6 +13,23 @@ export default [
     },
     languageOptions: {
       parser: tsParser,
+      globals: {
+        console: 'readonly',
+        process: 'readonly',
+        __dirname: 'readonly',
+        Buffer: 'readonly',
+        describe: 'readonly',
+        it: 'readonly',
+        beforeEach: 'readonly',
+        afterEach: 'readonly',
+        beforeAll: 'readonly',
+        afterAll: 'readonly',
+        expect: 'readonly',
+        jest: 'readonly',
+        fetch: 'readonly',
+        Express: 'readonly',
+        BufferEncoding: 'readonly',
+      },
       parserOptions: {
         ecmaFeatures: {
           jsx: true,
