@@ -402,3 +402,6 @@ dist
 *.prod
 
 
+# User specific ignores 
+todo.txt
+.vscode/
